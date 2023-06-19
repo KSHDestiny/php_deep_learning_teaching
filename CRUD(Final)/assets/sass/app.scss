@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:wght@400;700&display=swap");
+
+$primary: #967e76;
+$secondary: #9babb8;
+
+$font-family-base: "Poppins", sans-serif;
+
+$navbar-nav-link-padding-x: 3rem;
+$navbar-light-color: $primary;
+$navbar-light-hover-color: $primary;
+$navbar-light-icon-color: $primary;
+
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 5,
+  7: $spacer * 7,
+  8: $spacer * 9,
+  9: $spacer * 12,
+);
+
+@import "../bootstrap/scss/bootstrap.scss";
+
+// custom css
+.font-script {
+  font-family: "Dancing Script", cursive;
+}
+
+.bg-custom {
+  background: url("../img/background.jpg");
+  background-size: cover;
+}

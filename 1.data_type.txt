@@ -1,0 +1,10 @@
+String  //  " " , ' '  //  "Hello" // 'My name is Kaung Sat'
+Integer  //  12 ,456 ,1 ,45
+Float  //  10.732 , 3.45
+Boolean  // true(1)  / false(0)
+
+Array // ["aung aung", "zaw zaw", 123 , true]
+Object // { }
+NULL // no value assigned
+Resources
+

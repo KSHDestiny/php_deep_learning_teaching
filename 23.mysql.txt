@@ -1,0 +1,50 @@
+Database > DatabaseTable
+
+// create Database
+Name    utf8
+
+// Drop Database
+Operations > drop database
+
+// Create DatabaseTable
+Id  Name    Phone   Address     created_at  updated_at
+
+// TYPE => int, float, double, boolean, varchar, text, mediumtext, longtext, timestamp, date
+// Default => created_at, updated_at  -> current_timestamp
+// id -> primarykey + AI(auto increment)
+
+
+// SQL Query
+// SELECT *     // Show all column  // Read
+    SELECT * FROM table_name WHERE condition
+
+// SELECT   // Read
+    SELECT col_name, col_name FROM table_name WHERE condition
+
+// current_timestamp()  // CURRENT_TIMESTAMP
+
+// INSERT   // Create
+    INSERT INTO table_name ('col_name','col_name','col_name') VALUES ('value1','value2','value3')
+
+// UPDATE   // Update
+    UPDATE table_name SET col_name="value1", col_name=`value2` WHERE condition
+
+// DELETE   // Delete
+    DELETE FROM table_name WHERE condition
+
+
+// Condition
+// AND 
+    // WHERE condition1 AND condition2
+
+// OR
+    // WHERE condition1 OR condition2
+
+// BETWEEN
+    // WHERE col_name BETWEEN value1 AND value2
+
+// IN
+    // WHERE column IN ('value1','value2')
+
+// NOT IN
+    // WHERE column NOT IN ('value1','value2')

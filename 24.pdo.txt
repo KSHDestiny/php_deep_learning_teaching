@@ -1,0 +1,32 @@
+// Database connection
+$pdo = new PDO("mysql:dbname=testingdb; host=localhost","root","");
+
+// Create
+$query = "INSERT INTO table_name ('col1','col2',...) VALUES ('val1','val2',...)";
+$statement = $pdo->query($query);
+
+// Read
+$query = "SELECT * FROM table_name";
+$statement = $pdo->query($query);
+$rows = $statement->fetchAll(PDO:FETCH_ASSOC);		// (PDO:FETCH_OBJ)
+foreach($rows as $row){
+	echo $row["col"];
+}
+
+// Update
+$query = "UPDATE table_name SET col='val', col='val', ... WHERE condition";
+$statement = $pdo->query($query);
+
+// Delete
+$query = "DELETE FROM table_name WHERE condition";
+$statement = $pdo->query($query);
+
+
+// prevent injection (prepare statement)
+// create example
+$query = "INSERT INTO table_name ('col1','col2',...) VALUES (:key,:key,...)";
+$statement = $pdo->prepare($query);
+$statement->execute([
+        ':key' => "val",
+        ':key' => "val",
+]);
